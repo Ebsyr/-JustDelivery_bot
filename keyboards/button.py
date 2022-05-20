@@ -37,8 +37,13 @@ kb_mak.add(button_menu_mak)
 
 button_menu_restaurant = KeyboardButton('Restaurant')
 
+button_back = KeyboardButton('Back')
+
+kb_back = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+kb_back.add(button_back)
+
 kb_main = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
-kb_main.add(button_menu_mak).add(button_menu_restaurant).add(button_cancel)
+kb_main.add(button_menu_mak).add(button_menu_restaurant).add(button_back)
 
 kb_main2 = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
 kb_main2.add(button_menu).add(button_order).add(button_feedback).add(button_help)
